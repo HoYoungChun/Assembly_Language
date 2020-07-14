@@ -41,7 +41,7 @@ main PROC
 		add ebx, ebx			
 		add ebx, esi			;ebx <- esi+4*(HN-1) 
 		mov endtest, ebx		;endtest에는 각test의 마지막 고도를 확인할 값(esi+4*(HN-1))을 저장
-		
+			
 		L2:						;HN-1만큼 반복(마지막 고도를 제외시키는 정도까지 반복)
 			push ecx			;L2의 ecx저장
 			mov edi, 0			;edi는 한 test안에서 한 고도를 기준으로 하는 index역할(각 고도에서 시작할 때 0으로 초기화)
